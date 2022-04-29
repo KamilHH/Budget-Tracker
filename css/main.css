@@ -1,0 +1,68 @@
+* {
+  font-family: sans-serif;
+}
+
+#app {
+  display: grid;
+  place-items: center;
+}
+#app .budget-tracker {
+  border-collapse: collapse;
+  min-width: 750px;
+  border: 2px solid lightseagreen;
+}
+#app .budget-tracker th {
+  border-bottom: 0.5px solid lightseagreen;
+  text-align: left;
+  padding: 10px 20px;
+}
+#app .budget-tracker td {
+  padding: 5px;
+}
+#app .budget-tracker .input, #app .budget-tracker .delete-entry {
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+#app .budget-tracker .input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+}
+#app .budget-tracker .input:focus {
+  border-color: lightseagreen;
+}
+#app .budget-tracker .new-entry {
+  font-size: 1rem;
+  color: white;
+  background: lightseagreen;
+  border: transparent;
+  border-radius: 3px;
+  padding: 5px;
+}
+#app .budget-tracker .new-entry:hover {
+  transition: 500ms;
+  background-color: #57e1d9;
+}
+#app .budget-tracker .delete-entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  background: none;
+  color: red;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+#app .budget-tracker .delete-entry:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+#app .budget-tracker .controls, #app .budget-tracker .summary {
+  text-align: right;
+}
+
+/*# sourceMappingURL=main.css.map */

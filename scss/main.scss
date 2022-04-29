@@ -1,0 +1,76 @@
+* {
+  font-family: sans-serif;
+}
+#app {
+  display: grid;
+  place-items: center;
+
+  .budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+    border: 2px solid lightseagreen;
+
+    th {
+      border-bottom: 0.5px solid lightseagreen;
+      text-align: left;
+      padding: 10px 20px;
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    .input, .delete-entry {
+      height: 30px;
+      font-size: 13px;
+      padding: 0 10px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      outline: none;
+
+      &:focus {
+        border-color: lightseagreen;
+      }
+    }
+
+    .new-entry {
+      font-size: 1rem;
+      color: white;
+      background: lightseagreen;
+      border: transparent;
+      border-radius: 3px;
+      padding: 5px;
+
+      &:hover {
+        transition: 500ms;
+        background-color: lighten(lightseagreen, 20%);
+      }
+    }
+
+    .delete-entry {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      background: none;
+      color: red;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(255, 0, 0, 0.1);
+      }
+    }
+
+    .controls, .summary {
+      text-align: right;
+    }
+  }
+}
